@@ -1,0 +1,19 @@
+JavaScript Notes
+- A language to create functions in
+- Interactive features of a website
+- It has something to do with video
+- Devs use it for advanced scripts on their webpages
+- Used for automation
+- Makes a webpage come to life
+
+Webpages
+
+- HTML  --> The Structure of the Page
+    - content
+
+- CSS   --> The Style of the Page
+    - how does the page look
+
+- JavaScript --> What Can the Page Do?
+    - We add scripts to the page and it does stuff
+    - Java is NOT JavaScript

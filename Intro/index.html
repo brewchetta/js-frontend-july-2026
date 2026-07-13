@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    
+    <!-- JS GOES HERE -->
+    <script>
+        // VARIABLE
+        // it is being stored for later
+        // variables can be manipulated and some of them can be changed
+        let alertMessage = "hello stranger";
+        // var means we are declaring a variable
+
+        // use the value of the variable in the alert
+        console.log("alertMessage:", alertMessage);
+        
+        // we can alter the variable without var
+        alertMessage = "This will be the last alert...";
+
+        console.log("alertMessage:", alertMessage);
+
+        // CONSTANT
+        // when we define a constant it CANNOT BE CHANGED
+        const pi = 3.14159;
+
+        console.log(pi);
+
+        // we are not allowed to change pi... so JS errors out
+        // pi = 3.1415927;
+
+        // CAMELCASE - JAVASCRIPT
+        // alertMessage
+        // helloWorld
+        // myNumberPi
+
+        // KEBAB CASE - HTML
+        // alert-message
+        // hello-world
+        // my-number-pi
+
+        // SNAKE CASE - Python
+        // alert_message
+        // hello_world
+        // my_number_pi
+
+        // DATA TYPES //
+
+        // --- STRINGS ---
+        // a string is text
+        const stringOne = "!@#$%^&*()";
+        const stringTwo = 'I am "letters and quotes" and spaces';
+        const stringThree = `1029384756`;
+
+        // concatenation where we add two strings together to form a larger string
+        const combinedStrings = stringTwo + stringOne;
+
+        console.warn(combinedStrings)
+
+        // interpolation allows us to plug things into a string
+        // interpolation ONLY WORK WITH ``
+        const interpolatedString = `These are special characters: ${stringOne}`;
+
+        console.error(interpolatedString);
+
+        // console.log/warn/error will print to the console in the dev tools
+
+        // RETURN AT 11:40 EST
+
+        // --- NUMBERS ---
+
+        // BOOLEANS
+
+        // OBJECTS
+        
+        // ARRAYS
+
+    </script>
+
+</head>
+<body>
+    
+    <h1>Intro to JS</h1>
+
+</body>
+</html>

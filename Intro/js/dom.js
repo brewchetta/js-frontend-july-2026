@@ -89,3 +89,24 @@ function textToLowerCase() {
     const lowercaseText = text.toLowerCase()
     paragraph.textContent = lowercaseText
 }
+
+function handleFormSubmission() {
+    // event is the submission event itself
+    // preventDefault prevents the form from doing it's normal work of submitting / refreshing the page
+    event.preventDefault()
+
+    const firstInput = document.querySelector('#first-number')
+    const secondInput = document.querySelector('#second-number')
+
+    // parse the value of the inputs into a number
+    // by default an input has a string / text
+    const firstNumber = Number(firstInput.value)
+    const secondNumber = Number(secondInput.value)
+
+    const result = firstNumber + secondNumber
+
+    // grab the only <p> inside the <form>
+    const resultParagraph = document.querySelector('form p')
+    // set the text content for the result <p>
+    resultParagraph.textContent = result
+}

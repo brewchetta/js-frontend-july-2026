@@ -32,9 +32,13 @@
         Green
     </button>
 
+    <!-- TRANSLATION BUTTON -->
+
     <button id="translate-button" onclick="toggleChinese()">
         Translate to Chinese
     </button>
+
+    <!-- UPPER / LOWERCASE BUTTONS -->
 
     <button onclick="textToUpperCase()">To Uppercase</button>
     <button onclick="textToLowerCase()">To Lowercase</button>
@@ -42,12 +46,13 @@
 
 
     <!-- ADDITION FORM -->
-    <form>
+    <form onsubmit="handleFormSubmission()">
         <label class="number-label">Number One</label>
         <input id="first-number" type="number">
         <label class="number-label">Number Two</label>
         <input id="second-number" type="number">
-        <p>Addition Result: ???</p>
+        
+        <p>RESULT WILL GO HERE</p>
 
         <input type="submit" value="Add Together">
     </form>

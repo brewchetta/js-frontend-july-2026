@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to JS</title>
-
+    
     <!-- JS GOES HERE -->
     <!-- <script src="js/index.js"></script> -->
     <!-- <script src="js/loops.js"></script> -->
-    <script src="js/functions.js"></script>
-
+    <!-- <script src="js/functions.js"></script> -->
+    
+    <!-- defer means wait until the page has loaded before running the script -->
+    <!-- if we don't wait until the page has loaded, a lot of elements won't exist when the script wants to find them -->
+    <script defer src="js/dom.js"></script>
 </head>
 <body>
     
-    <h1>Intro to JS</h1>
+    <h1 class="heading">Intro to JS</h1>
 
-    <label>Number One</label>
-    <input type="number">
-    <label>Number Two</label>
-    <input type="number">
+    <!-- COLOR BUTTONS -->
 
-    <p>Addition Result: ???</p>
+    <button onclick="changeHeadingToRed()">
+        Red
+    </button>
+    
+    <button onclick="changeHeadingToYellow()">
+        Yellow
+    </button>
+    
+    <button onclick="changeHeadingToGreen()">
+        Green
+    </button>
 
+    <button id="translate-button" onclick="toggleChinese()">
+        Translate to Chinese
+    </button>
+
+    <button onclick="textToUpperCase()">To Uppercase</button>
+    <button onclick="textToLowerCase()">To Lowercase</button>
+    <p id="upper-or-lower">I can be changed TO UPPERCASE or to lowercase</p>
+
+
+    <!-- ADDITION FORM -->
+    <form>
+        <label class="number-label">Number One</label>
+        <input id="first-number" type="number">
+        <label class="number-label">Number Two</label>
+        <input id="second-number" type="number">
+        <p>Addition Result: ???</p>
+
+        <input type="submit" value="Add Together">
+    </form>
+    
+    
 </body>
 </html>

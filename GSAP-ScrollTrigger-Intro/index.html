@@ -8,6 +8,20 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Rancho&display=auto" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- JS FILES -->
+
+	<!-- 1. We want to load the GSAP code -->
+	<!-- 2. ScrollTrigger plugin >> this code relies on having the GSAP code loaded first -->
+	<!-- 3. Run our code which now knows about GSAP and ScrollTrigger -->
+
+	<!-- BASIC GSAP -->
+	<script defer src="js/gsap.min.js"></script>
+	<!-- SCROLLTRIGGER PLUGIN CODE -->
+	<script defer src="js/ScrollTrigger.min.js"></script>
+	<!-- OUR CODE -->
+	<script defer src="js/index.js"></script>
+
 </head>
 <body>
 	<header>
@@ -27,6 +41,7 @@
 	<main>
 		<h2>What Makes Hipstirred Coffee Great?</h2>
 
+		<!-- SECTION 1 - HIGH QUALITY -->
 		<section>
 			<div class="text">
 				<h3>High Quality</h3>
@@ -34,6 +49,8 @@
 			</div>
 			<img src="img/quality.jpg" alt="">
 		</section>
+
+		<!-- SECTION 2 - CONVENIENT -->
 		<section>
 			<div class="text">
 				<h3>Convenient</h3>
@@ -41,6 +58,8 @@
 			</div>
 			<img src="img/convenient.jpg" alt="">
 		</section>
+
+		<!-- SECTION 3 - AFFORDABLE -->
 		<section>
 			<div class="text">
 				<h3>Affordable</h3>
@@ -48,6 +67,8 @@
 			</div>
 			<img src="img/affordable.jpg" alt="">
 		</section>
+
+		<!-- SECTION 4 - SUSTAINABLE -->
 		<section>
 			<div class="text">
 				<h3>Sustainable</h3>

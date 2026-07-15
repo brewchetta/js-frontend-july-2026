@@ -47,18 +47,19 @@ spaceTimeline
 .set('#space-panel1', {top: 0})
 .from('#space-panel1', {
     duration: 1,
-    // scale: 1.5,
     opacity: 0
 })
 .set('#space-panel2', {top: 0}, '+=1')
-// .from('#space-panel2', {
-//     duration: 1,
-//     opacity: 0,
-//     xPercent: -100
-// })
 .from('#space-panel2', {
     duration: 1,
     opacity: 0,
     scale: 0,
     ease: 'back.out'
 })
+.set('#space-panel3', {top: 0}, '+=3')
+.from('#space-panel3', {
+    duration: 0.5,
+    opacity: 0
+})
+.from('#space-panel3 > p', { duration: 1, opacity: 0 })
+.from('#space-panel3 > h2', { duration: 1, top: '341px' }, '+=1')

@@ -43,6 +43,27 @@
 	background-image: url(https://d2rj6cu2ik1biv.cloudfront.net/193c804a-a673-47bd-b09b-11baf4822a17/7c05fcb0-7a79-4c64-9752-81b63d70add8/ff57369d-501b-4a51-bd27-e1f039acf11f/thumbnails/ebcd8377-5a4a-403f-a155-99fff403174c.jpg?w=1200&webp=1);
 }
 
+#space-panel3 > p {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	font-size: 25px;
+}
+
+#space-panel3 > h2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 50px;
+	font-family: monospace;
+	transform: translate(-50%);
+	font-family: "Science Gothic", sans-serif;
+}
+
+#space-panel3 > h2 {
+
+}
+
 /* PREVIOUS STYLING */
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -2,6 +2,45 @@
 
 #banner {
 	overflow: hidden;
+	visibility: hidden;
+}
+
+#space-ad {
+	height: 340px;
+	width: 730px;
+	display: block;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#space-ad > div {
+	height: 340px;
+	width: 730px;
+	background-position: center center;
+	background-size: cover;
+	position: absolute;
+}
+
+#space-panel0 {
+	background: #000;
+	top: 0;
+}
+
+#space-panel1 {
+	top: 341px;
+	background-image: url(../img/space-red.webp);
+}
+
+#space-panel2 {
+	top: 341px;
+	background-image: url(https://www.snexplores.org/wp-content/uploads/sites/3/2019/11/040716_cc_sugar-space-inline_free.jpg);
+}
+
+#space-panel3 {
+	top: 341px;
+	background-image: url(https://d2rj6cu2ik1biv.cloudfront.net/193c804a-a673-47bd-b09b-11baf4822a17/7c05fcb0-7a79-4c64-9752-81b63d70add8/ff57369d-501b-4a51-bd27-e1f039acf11f/thumbnails/ebcd8377-5a4a-403f-a155-99fff403174c.jpg?w=1200&webp=1);
 }
 
 /* PREVIOUS STYLING */

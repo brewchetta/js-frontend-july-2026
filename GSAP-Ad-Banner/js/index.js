@@ -8,6 +8,8 @@ const adTimeline = gsap.timeline({
 
 // create the tweens here
 adTimeline
+// make the ad visible when all the JS has loaded
+// .set('#banner', { visibility: 'visible' }) 
 .from('#panel1-text', { // hungry pops in
     duration: 0.5,
     scale: 0.5,
@@ -31,5 +33,32 @@ adTimeline
     duration: 0.5,
     scale: 1.5,
     opacity: 0,
+    ease: 'back.out'
+})
+
+// SPACE SUGAR AD //
+
+const spaceTimeline = gsap.timeline({ 
+    repeat: -1, 
+    repeatDelay: 5 
+})
+
+spaceTimeline
+.set('#space-panel1', {top: 0})
+.from('#space-panel1', {
+    duration: 1,
+    // scale: 1.5,
+    opacity: 0
+})
+.set('#space-panel2', {top: 0}, '+=1')
+// .from('#space-panel2', {
+//     duration: 1,
+//     opacity: 0,
+//     xPercent: -100
+// })
+.from('#space-panel2', {
+    duration: 1,
+    opacity: 0,
+    scale: 0,
     ease: 'back.out'
 })

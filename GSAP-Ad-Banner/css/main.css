@@ -1,3 +1,11 @@
+/* ANIMATION STYLING */
+
+#banner {
+	overflow: hidden;
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { box-sizing: border-box; }
 body {
 	font-family: 'Asap', Arial, sans-serif;
@@ -20,7 +28,7 @@ ul {
 	list-style-type: none;
 }
 #banner {
-	overflow: visible;
+	/* overflow: visible; */
 	display: block;
 	position: relative;
 	width: 300px;
